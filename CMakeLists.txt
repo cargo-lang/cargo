@@ -13,7 +13,7 @@ include(CMakeOptions.txt)
 include(InstallConfigurations)
 include(PackConfigurations)
 
-add_library(${PROJECT_NAME}42 ${SOURCES})
+add_library(${PROJECT_NAME}42 SHARED ${SOURCES})
 
 if (WIN32)
   add_executable(${PROJECT_NAME} src/main.cpp)
